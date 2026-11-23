@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ridge Nova — Color Forge</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>◐ ridge nova — color forge</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="controls">Controls</h2><div class="btncol">
+<button id="regen" class="primary" data-i="regen">↻ New palette</button></div></section>
+<section><h2 data-i="params">Parameters</h2>
+<label><span data-i="harmony">Harmony</span><select id="harm"><option selected>analogous</option><option >complementary</option><option >triadic</option><option >tetradic</option><option >split</option></select></label>
+<label><span data-i="base">Base hue</span><input type="range" id="hue" min="0" max="360" value="148"></label>
+<label><span data-i="count">Colors</span><input type="range" id="count" min="3" max="8" value="5"></label>
+<label><span data-i="sat">Saturation</span><input type="range" id="sat" min="20" max="100" value="79"></label>
+<label><span data-i="light">Lightness</span><input type="range" id="light" min="20" max="80" value="49"></label></section>
+<section><h2 data-i="export">Export</h2><div class="btncol">
+<button id="css" data-i="css">Copy CSS variables</button>
+<button id="json" data-i="json">Copy JSON</button>
+<button id="grad" data-i="grad">⤓ Gradient PNG</button></div></section>
+</aside><div class="stage"><div class="strip" id="strip"></div><div class="info"><div id="hexes"></div><div id="contrast"></div></div></div></main>
+<script src="app.js"></script></body></html>
